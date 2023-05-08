@@ -1,0 +1,74 @@
+.background-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100vh; /* set the container height to fill the viewport */
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #cc32cc;
+    position: relative;
+    animation-name: move-y;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s; /* add a delay to the animation */
+  }
+  
+  @keyframes move-y {
+    0% { top: -30%; }
+    50% { top: 0%; }
+    100% { top: -30%; }
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #17adc7;
+    position: relative;
+    animation-name: move-x-rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s; /* add a delay to the animation */
+  }
+  
+  @keyframes move-x-rotate {
+    0% { left: 0%;transform: rotate(0deg) }
+    25% { left: 20%;}
+    75% { left: -20%;
+       }
+    100% { left: 0%;
+        transform: rotate(180deg) }
+  }
+  
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .background-container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+  
+  /* Medium screens */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .background-container {
+      max-width: 720px;
+      padding: 0 20px;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 961px) {
+    .background-container {
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+  }
+  

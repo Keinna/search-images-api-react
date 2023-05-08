@@ -1,0 +1,32 @@
+/* Set the default font family and font size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Set a default margin and padding for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a default background color for the page */
+  html, body {
+    background-color: #e2ddff;
+  }
+  
+  /* Set a default text color for all elements */
+  body {
+    color: #333;
+  }
+
+ 
+  input {
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #17adc7;
+    outline: solid 1px #17adc7;
+    border-radius: 5px;
+  }
